@@ -18,15 +18,11 @@ const EmailSection = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
@@ -94,14 +90,24 @@ const EmailSection = () => {
               >
                 Subject
               </label>
-              <input
+              <select
                 name="subject"
-                type="text"
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
+              >
+                <option value="">Choose a service</option>
+                <option value="video editing service">
+                  Video Editing Service
+                </option>
+                <option value="cv making service">CV Making Service</option>
+                <option value="reports writing service">
+                  Reports Writing Service
+                </option>
+                <option value="logos design service">
+                  Logos Design Service
+                </option>
+              </select>
             </div>
             <div className="mb-6">
               <label
@@ -113,7 +119,7 @@ const EmailSection = () => {
               <textarea
                 name="message"
                 id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full  h-[250px] p-2.5"
                 placeholder="Let's talk about..."
               />
             </div>
