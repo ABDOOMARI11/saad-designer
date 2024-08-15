@@ -21,23 +21,22 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-  sequence={[
-    "Revamb services",
-    1000,
-    "CV making", // ou "Resume creation" si vous préférez
-    1000,
-    "Video Editing",
-    1000,
-    "Logo Designing",
-    1000,
-    "Report Writing",
-    1000,
-  ]}
-  wrapper="span"
-  speed={50}
-  repeat={Infinity}
-/>
-
+              sequence={[
+                "Revamb services",
+                1000,
+                "CV making", // ou "Resume creation" si vous préférez
+                1000,
+                "Video Editing",
+                1000,
+                "Logo Designing",
+                1000,
+                "Report Writing",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Welcome to our official website,happy to work with you !!
@@ -57,11 +56,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-gradient-to-r from-black to-gray-500   w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/revamb-services.png"
+<div className="rounded-full bg-gradient-to-r from-teal-800 to-blue-300 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+<Image
+              src="/images/logo-black.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full "
               width={300}
               height={300}
             />
