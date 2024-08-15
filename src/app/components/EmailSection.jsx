@@ -4,6 +4,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -47,16 +48,19 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          At Revamb Services, we&apos;re always open to new opportunities and
+          collaborations. Whether you have a question, feedback, or just want to
+          connect, feel free to reach out! We&apos;ll do our best to respond
+          promptly.
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <p className="text-[#ADB7BE]">here is our official instagram account :</p>
+          <Link
+            href="https://instagram.com/saad_mts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-white h-6 w-6" />
           </Link>
         </div>
       </div>
@@ -119,7 +123,7 @@ const EmailSection = () => {
               <textarea
                 name="message"
                 id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full  h-[250px] p-2.5"
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full  h-auto p-2.5"
                 placeholder="Let's talk about..."
               />
             </div>
