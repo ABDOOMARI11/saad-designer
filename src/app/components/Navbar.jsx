@@ -5,6 +5,8 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
+// Importez votre logo ici
+
 const navLinks = [
   {
     title: "About",
@@ -24,14 +26,12 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 pr-10">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          SAAD
-        </Link>
+        <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold">
+          {/* Remplacez le texte par l'image du logo */}
+          <img src="/images/revamb-services.png" alt="Logo" className="h-24 w-auto md:h-28" />
+          </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

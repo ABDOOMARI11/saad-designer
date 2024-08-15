@@ -8,7 +8,7 @@ import {
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiMicrosoftword,
-  SiDavinciresolve
+  SiDavinciresolve,
 } from "react-icons/si";
 import {
   Tooltip,
@@ -32,7 +32,7 @@ const TAB_DATA = [
               { icon: <SiLatex />, name: "LaTeX" },
               { icon: <SiAdobephotoshop />, name: "Adobe Photoshop" },
               { icon: <SiAdobeillustrator />, name: "Adobe Illustrator" },
-              { icon: <SiDavinciresolve  />, name: "Da Vinci Resolve" },
+              { icon: <SiDavinciresolve />, name: "Da Vinci Resolve" },
             ].map((skill, index) => (
               <li key={index}>
                 <TooltipProvider delayDuration={100}>
@@ -54,7 +54,6 @@ const TAB_DATA = [
       </div>
     ),
   },
-
 ];
 
 const AboutSection = () => {
@@ -74,17 +73,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a versatile professional specializing in a range of creative
-            services, including video editing, report authoring, logo design,
-            and CV creation. My expertise in tools like Canva, Adobe
-            Illustrator, Adobe Photoshop, LaTeX, and MS Word allows me to
-            deliver high-quality, visually compelling, and polished results
-            tailored to meet diverse client needs. With a keen eye for detail
-            and a passion for design, I excel at transforming ideas into
-            visually appealing content. Whether it &apos;s crafting engaging
-            video content, designing unique and professional logos, authoring
-            well-structured reports, or creating standout CVs that capture
-            attention, I approach each project with creativity and precision.
+            Revamb Services offers top-tier creative solutions, including video
+            editing, report writing, logo design, and CV creation. Using tools
+            like Canva, Adobe Illustrator, Photoshop, LaTeX, and MS Word, we
+            deliver polished, visually compelling results. With a focus on
+            detail and design, we turn your ideas into standout content tailored
+            to your needs
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -94,8 +88,6 @@ const AboutSection = () => {
               {" "}
               Tools{" "}
             </TabButton>
-
-
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}

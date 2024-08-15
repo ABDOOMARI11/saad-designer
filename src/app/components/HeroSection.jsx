@@ -17,29 +17,30 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Hello,We are{" "}
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "Saad Mouatassim",
-                1000,
-                "CV maker",
-                1000,
-                "Video Editor",
-                1000,
-                "Logo Designer",
-                1000,
-                "Reports Author",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+  sequence={[
+    "Revamb services",
+    1000,
+    "CV making", // ou "Resume creation" si vous préférez
+    1000,
+    "Video Editing",
+    1000,
+    "Logo Designing",
+    1000,
+    "Report Writing",
+    1000,
+  ]}
+  wrapper="span"
+  speed={50}
+  repeat={Infinity}
+/>
+
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Welcome to my personal Portfolio,happy to work with you !!
+            Welcome to our official website,happy to work with you !!
           </p>
           <div>
             <Link
