@@ -16,7 +16,11 @@ const EmailSection = () => {
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Template ID
         e.target, // Form data
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY // Public Key
+        
+
+        
       )
+      
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);

@@ -28,14 +28,6 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  {
-    id: 4,
-    title: "Reports making",
-    image: "/images/reports/4.jpeg",
-    tag: ["All", "Video Editing"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
 ];
 
 const ProjectsSection = () => {

@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold">
           {/* Remplacez le texte par l'image du logo */}
-          <img src="/images/revamb-services.png" alt="Logo" className="h-24 w-auto md:h-28" />
+          <img src="/images/logo-light-rev.png" alt="Logo" className="h-32 w-auto md:h-36" />
           </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

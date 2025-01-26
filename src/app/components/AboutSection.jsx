@@ -4,7 +4,6 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import {
   SiCanva,
-  SiLatex,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiMicrosoftword,
@@ -29,7 +28,6 @@ const TAB_DATA = [
             {[
               { icon: <SiCanva />, name: "Canva" },
               { icon: <SiMicrosoftword />, name: "MS Word" },
-              { icon: <SiLatex />, name: "LaTeX" },
               { icon: <SiAdobephotoshop />, name: "Adobe Photoshop" },
               { icon: <SiAdobeillustrator />, name: "Adobe Illustrator" },
               { icon: <SiDavinciresolve />, name: "Da Vinci Resolve" },
@@ -74,8 +72,8 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Revamb Services offers top-tier creative solutions, including video
-            editing, report writing, logo design, and CV creation. Using tools
-            like Canva, Adobe Illustrator, Photoshop, LaTeX, and MS Word, we
+            editing, logo design, and CV creation. Using tools
+            like Canva, Adobe Illustrator, Photoshop, and MS Word, we
             deliver polished, visually compelling results. With a focus on
             detail and design, we turn your ideas into standout content tailored
             to your needs
